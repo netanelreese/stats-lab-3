@@ -1,5 +1,5 @@
 #This will be a different path if in the lab or at home
-dird="\\Users\\HyDRO-Lab\\Desktop\\MATH4753\\DATAxls\\"
+dird="\\Users\\reese\\Desktop\\fa23\\stats\\lab-3\\"
 
 #my function to read data 
 myread=function(csv){
