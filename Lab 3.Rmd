@@ -114,14 +114,34 @@ plot(Height~BHDiameter,bg="Blue",pch=21,ylim=c(0,1.1*max(Height)),xlim=c(0,1.1*m
 with(spruce.df,abline(h=mean(Height)))
 with(spruce.df, segments(BHDiameter,Height,BHDiameter,mean(Height),col="Green"))
 TSS=with(spruce.df,sum((Height-mean(Height))^2))
+par(mfrow=c(1,1))
 
+```
+
+# Task 5
+
+```{r}
+summary(spruce.lm)
+# Slope = 0.48147
+# Intercept = 9.14684
+# EQN = 0.48147 * BHDiameter + 9.14684
+predict(spruce.lm, data.frame(BHDiameter=c(15,18,20)))
+```
+
+# Task 6
+
+```{r}
+library(ggplot2)
+g=ggplot(spruce.df, aes(x=BHDiameter,y=Height,colour=BHDiameter))
+g=g+geom_point() + geom_line()+ geom_smooth(method="lm")
+g+ggtitle("Height Vs BHDiameter")
 ```
 
 #Task 7
 This is how you place images in RMD documents
 
 <center>
-!["name of image"](gHeight.png){ width=70% }
+!["name of image"](gHeat.png){ width=70% }
 </center>
 
 
