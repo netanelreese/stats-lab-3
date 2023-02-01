@@ -1,7 +1,7 @@
 ---
 title: "Lab 3: MATH 4753"
-author: "Your name"
-date: "January 28, 2019"
+author: "Nathanael Reese"
+date: "January 31st, 2019"
 output: 
   html_document:
     toc: yes
@@ -140,7 +140,14 @@ g+ggtitle("Height Vs BHDiameter")
 #Task 7
 This is how you place images in RMD documents
 
+
+
 <center>
+!["G"](g.png){ width=50% }
+!["G Heat"](gheat(1).png){ width=50% }
+!["G Ratio"](gratio.png){ width=50% }
+!["G Size Heat"](gsheat.png){ width=50% }
+!["G Size Ratio"](gsratio.png){ width=50% }
 !["name of image"](gHeat.png){ width=70% }
 </center>
 
