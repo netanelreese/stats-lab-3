@@ -27,3 +27,6 @@ with(spruce.df,
 spruce.lm=with(spruce.df, lm(Height~BHDiameter))
 abline(spruce.lm)
 
+#Task 4
+
+
